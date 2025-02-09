@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+header {
+  background: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
+  );
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 16px;
+  font-size: 1.25em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+.home-background {
+    background: linear-gradient(
+        109.6deg,
+        rgb(185, 212, 242) 11.2%,
+        rgb(244, 210, 226) 100.3%
+      );
+  padding: 60px 160px 160px 160px;
+}
+.main-header {
+  font-size: 2em;
+}
+.description {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.25em;
+}
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card {
+  background: white;
+  padding: 10px 0px 0px 0px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin: 0 auto;
+  border: 6px solid;
+  border-image: linear-gradient(45deg, rgb(185, 212, 242), rgb(244, 210, 226)) 1;
+  border-radius: 20px;
+  transition: all 150ms ease-in-out;
+}
+.project-card img {
+  width: 100%;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+.project-title {
+  text-align: left;
+  margin-left: 8px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.project-description {
+  text-align: left;
+  margin-left: 8px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .contact-background {
+  background: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
+  );
+} */
+.contact-header {
+  color: black;
+}
+.linkedin-link {
+  text-decoration: none;
+  color: #3a394a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.github-link {
+  text-decoration: none;
+  color: #3a394a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
+  );
+  color: black;
+  font-weight: bold;
+  padding: 28px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
