@@ -16,7 +16,16 @@ header {
   text-align: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
+  );
+}
 nav ul {
   list-style: none;
   padding: 0;
@@ -32,6 +41,8 @@ nav ul li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 200;
 }
 
 section {
@@ -40,20 +51,114 @@ section {
 }
 
 .home-background {
-    background: linear-gradient(
-        109.6deg,
-        rgb(185, 212, 242) 11.2%,
-        rgb(244, 210, 226) 100.3%
-      );
+  background: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
+  );
   padding: 60px 160px 160px 160px;
 }
-.main-header {
-  font-size: 2em;
+.home-container {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 80px;
 }
-.description {
+
+.profile-image {
+  width: 400px;
+  height: 420px;
+  border-radius: 50%;
+  background: url("images/profile\ pic.jpg") no-repeat center/cover;
+  border: 5px solid #2a3842;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+.main-header {
+  font-size: 3em;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+}
+/* .description {
   width: 70%;
   margin: 0 auto;
   font-size: 1.25em;
+} */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px;
+}
+
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 20px;
+  border-radius: 16px;
+  text-align: center;
+  width: 200px;
+  transition: all 150ms ease-in-out;
+  border: solid 4px #2a3842;
+}
+.github-button {
+  background-color: #19202b;
+  color: white;
+}
+
+.github-button:hover {
+  background-color: #2a3648;
+}
+
+.linkedin-button {
+  background-color: #0b5ec2;
+  color: white;
+}
+
+.linkedin-button:hover {
+  background-color: #317bc2;
+}
+.email-text {
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: "Lilita One", sans-serif;
+}
+.contact-text {
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: "Lilita One", sans-serif;
+  margin-right: 260px
+}
+
+/* About Section */
+.about-background {
+  background-color: #313d4a;
+}
+.about-header {
+  color: white;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+}
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.about-text {
+  line-height: 1.2;
+  color: white;
+  font-size: 1.3em;
+  padding: 12px;
+  font-family: "Iansui", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Projects */
+.project-header {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
 }
 .project-grid {
   display: flex;
@@ -83,13 +188,16 @@ section {
   margin-left: 8px;
   font-size: 1.5em;
   font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+
 }
 .project-description {
   text-align: left;
   margin-left: 8px;
+  font-family: "Open Sans", sans-serif;
 }
 
-.skills-list {
+/* .skills-list {
   list-style: none;
   padding: 0;
 }
@@ -98,7 +206,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* .contact-background {
   background: linear-gradient(
@@ -107,6 +215,7 @@ section {
     rgb(244, 210, 226) 100.3%
   );
 } */
+ 
 .contact-header {
   color: black;
 }
@@ -122,6 +231,35 @@ section {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* Resume */
+.resume-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+.resume-button {
+  background: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
+  );
+  color: white;
+}
+
+.resume-button:hover {
+  background: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  color: black;
+}
+.resume-text {
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: "Lilita One", sans-serif;
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -144,13 +282,27 @@ footer ul li {
   display: inline;
   margin: 0 10px;
 }
-
+.footer-header {
+  font-family: "Iansui", cursive;
+  font-weight: bold;
+  font-style: normal;
+}
 footer a {
   color: black;
   text-decoration: none;
+  font-family: "Iansui", cursive;
   font-weight: bold;
+  font-style: normal;
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.linkedinlogo {
+  margin-right: 4px;
+}
+
+.githublogo {
+  margin-right: 4px;
 }

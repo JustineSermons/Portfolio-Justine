@@ -5,39 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iansui&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/5e8cd39909.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="home-background">
     <section id="home">
-      <h1 class="main-header">Justine Sermons</h1>
-      <p class="description">
-        I am a Digital Media student at UCF immersing myself in various aspects
-        of the field, such as full stack development, mobile development, and
-        UX/UI Design. My focus is centered towards Front End Web Development and
-        UX/UI Design, areas that allow me to combine my passion for creativity
-        and technology. I am motivated to create and design innovative digital
-        experiences and user-friendly designs that resonate with users. I am
-        also driven to keep gaining more and more knowledge and skills in the
-        vast field of Digital Media to not only improve myself, but to also
-        contribute to meaningful projects that make a positive impact in how
-        people interact with technology.
-      </p>
+      <h1 class="main-header">Justine Sermons - UI/UX Designer</h1>
+      <div class="home-container">
+      <div class="profile-image"></div>
+      <div class="button-container">
+        <p class="contact-text">Contact:</p>
+        <a href="https://github.com/JustineSermons" target="_blank" class="github-button btn"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/justine-sermons-jks/" target="_blank" class="linkedin-button btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <p class="email-text">Email: sermonsjustine@gmail.com</p>
+    </div>
     </section>
+  </div>
+</div>
+
+<div class="about-background">
+  <section id="about">
+    <h1 class="about-header">About Me</h1>
+    <div class="about-container">
+    <p class="about-text">Hello! I'm Justine, a student at the University of Central Florida pursuing a bachelor's degree in Digital Media for the Web and Interactive Media Track.
+      I've always been interested in a variety of things connected to Digital Media such as video games, video editing, design, development, and social media. While pursuing my degree, 
+      I've learned more about the Digital Media field and thought I would be best suited for a UI/UX or Front End type of role. However, I'd be open to different careers that align with my 
+      interests and skillset! I've always enjoyed learning about new technologies and design-related things and would like to continuously improve on my skills for both. In my free time I like
+      exploring social media, watching shows/movies, playing video games, and learning Japanese.
+  
+  </section>
+  </div>
 </div>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2 class="project-header">Projects</h2>
       <div class="project-grid">
         <div class="project-card">
           <p class="project-title">Exercise App Design</p>
@@ -59,7 +81,7 @@
           <p class="project-title">To-Do App Design</p>
           <img src="images/to do app.jpg" alt="To-Do App" />
           <p class="project-description">
-            <strong>Summary:</strong>To-Do App allowing users to register,
+            <strong>Summary:</strong> To-Do App allowing users to register,
             login, create and manage tasks, filter and delete tasks, set
             deadlines, mark tasks as completed, see task completion status, and
             have a profile.
@@ -123,37 +145,27 @@
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Microsoft Word, PowerPoint, Excel</li>
-        <li>Adobe Photoshop, Illustrator, InDesign, Premiere Pro</li>
-        <li>HTML, CSS, and JavaScript</li>
-        <li>Front and Back End Web Development</li>
-        <li>UI/UX Design</li>
-      </ul>
-    </section>
-
-    <div class="contact-background">
+    <!-- <div class="contact-background">
     <section id="contact">
       <h2 class="contact-header">Contact</h2>
       <p>Email: ju676527@ucf.edu</p>
       <p>LinkedIn: <a class="linkedin-link" href="https://www.linkedin.com/in/justine-sermons-jks/" target="_blank">Justine Sermons</a></p>
       <p>Github: <a class="github-link" href="https://github.com/JustineSermons" target="_blank">Justine Sermons</a></p>
     </section>
-</div>
+</div> -->
 
 <footer>
-    <p>© 2025 Justine Sermons. All rights reserved.</p>
+    <p class="footer-header">© 2025 Justine Sermons. All rights reserved.</p>
     <ul>
       <!-- <li><a href="#about">About</a></li> -->
       <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="resume.html">Resume</a></li>
     </ul>
     <div class="social-links">
-      <a href="https://github.com/JustineSermons" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/justine-sermons-jks/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/JustineSermons" target="_blank"><i class="fa-brands fa-github githublogo"></i>GitHub</a> |
+      <a href="https://www.linkedin.com/in/justine-sermons-jks/" target="_blank" class="my-linkedin"><i class="fa-brands fa-linkedin linkedinlogo"></i>LinkedIn</a>
     </div>
   </footer>
 
